@@ -9,6 +9,25 @@ document.addEventListener('DOMContentLoaded', function(){
    SCRIPT GENERAL - ÓPTICA CAMIL
 =================================== */
 
+const menuToggle = document.querySelector('.menu-toggle');
+const mainMenu = document.querySelector('.menu');
+if(menuToggle && mainMenu){
+    menuToggle.addEventListener('click', function(){
+        const isOpen = mainMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active', isOpen);
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.querySelectorAll('.menu a').forEach(function(link){
+        link.addEventListener('click', function(){
+            if(window.innerWidth <= 900){
+                mainMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+}
 
 /* ===================================
    BOTÓN SUBIR AL INICIO
@@ -235,30 +254,30 @@ const products = {
     oftalmicos: {
         title: 'Aros Oftálmicos',
         items: [
-            { id: 'o1', title: 'Aro Classic', img: 'imagenes/images.png', desc: 'Aro clásico elegante, ligero.', price: 199, stock: 8 },
-            { id: 'o2', title: 'Aro Retro', img: 'imagenes/images.png', desc: 'Estilo retro para un look único.', price: 249, stock: 5 },
-            { id: 'o3', title: 'Aro Minimal', img: 'imagenes/images.png', desc: 'Diseño minimalista y cómodo.', price: 179, stock: 12 }
+            { id: 'o1', title: 'Aro Classic', img: 'imagenes/armazones.svg', desc: 'Aro clásico elegante, ligero.', price: 199, stock: 8 },
+            { id: 'o2', title: 'Aro Retro', img: 'imagenes/armazones.svg', desc: 'Estilo retro para un look único.', price: 249, stock: 5 },
+            { id: 'o3', title: 'Aro Minimal', img: 'imagenes/armazones.svg', desc: 'Diseño minimalista y cómodo.', price: 179, stock: 12 }
         ]
     },
     sol: {
         title: 'Anteojos de Sol',
         items: [
-            { id: 's1', title: 'Sol Urban', img: 'imagenes/lentedesol.png', desc: 'Protección UV con estilo urbano.', price: 249, stock: 6 },
-            { id: 's2', title: 'Sol Sport', img: 'imagenes/lentedesol.png', desc: 'Ligeros y resistentes para deporte.', price: 299, stock: 4 }
+            { id: 's1', title: 'Sol Urban', img: 'imagenes/sol.svg', desc: 'Protección UV con estilo urbano.', price: 249, stock: 6 },
+            { id: 's2', title: 'Sol Sport', img: 'imagenes/sol.svg', desc: 'Ligeros y resistentes para deporte.', price: 299, stock: 4 }
         ]
     },
     contactoLentes: {
         title: 'Lentes de Contacto',
         items: [
-            { id: 'c1', title: 'Contacto Daily', img: 'imagenes/contacto.png', desc: 'Uso diario cómodo.', price: 89, stock: 30 },
-            { id: 'c2', title: 'Contacto Monthly', img: 'imagenes/contacto.png', desc: 'Reemplazo mensual confiable.', price: 149, stock: 20 }
+            { id: 'c1', title: 'Contacto Daily', img: 'imagenes/contacto.svg', desc: 'Uso diario cómodo.', price: 89, stock: 30 },
+            { id: 'c2', title: 'Contacto Monthly', img: 'imagenes/contacto.svg', desc: 'Reemplazo mensual confiable.', price: 149, stock: 20 }
         ]
     },
     accesorios: {
         title: 'Accesorios',
         items: [
-            { id: 'a1', title: 'Estuche Elegante', img: 'imagenes/accesorios.png', desc: 'Protege tus lentes con estilo.', price: 25, stock: 50 },
-            { id: 'a2', title: 'Paño Microfibra', img: 'imagenes/accesorios.png', desc: 'Limpieza segura y efectiva.', price: 15, stock: 100 }
+            { id: 'a1', title: 'Estuche Elegante', img: 'imagenes/accesorios.svg', desc: 'Protege tus lentes con estilo.', price: 25, stock: 50 },
+            { id: 'a2', title: 'Paño Microfibra', img: 'imagenes/accesorios.svg', desc: 'Limpieza segura y efectiva.', price: 15, stock: 100 }
         ]
     }
 };
