@@ -200,30 +200,6 @@ desplegables.forEach(function(menu){
 
 
 
-/* ===================================
-   CAMBIO DE TÍTULO DINÁMICO
-=================================== */
-
-
-let tituloOriginal = document.title;
-
-
-window.addEventListener(
-"blur",
-function(){
-
-    document.title="¡Vuelve a visitarnos!";
-
-});
-
-
-window.addEventListener(
-"focus",
-function(){
-
-    document.title=tituloOriginal;
-
-});
 
 
 
