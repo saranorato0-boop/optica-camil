@@ -1,0 +1,705 @@
+body {
+    background-color: powderblue;
+}
+/* ===================================
+   CONFIGURACIÓN GENERAL
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f7f9fc;
+    color:#333;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:white;
+
+}
+
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+header{
+
+    width:100%;
+    background:#0b3d91;
+    position:fixed;
+    top:0;
+    z-index:1000;
+
+}
+
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+
+}
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+
+.logo img{
+
+    width:60px;
+    height:60px;
+    border-radius:50%;
+
+}
+
+
+.logo h2{
+
+    color:white;
+    font-size:22px;
+
+}
+
+
+.menu{
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+
+}
+
+
+.menu li{
+
+    position:relative;
+
+}
+
+
+.menu li a{
+
+    padding:10px;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+
+.menu li a:hover{
+
+    color:#00d9ff;
+
+}
+
+
+/* ===================================
+   MENÚ DESPLEGABLE
+=================================== */
+
+
+.submenu{
+
+    position:absolute;
+    top:35px;
+    left:0;
+    background:#0b3d91;
+    width:220px;
+    display:none;
+    list-style:none;
+    padding:10px;
+    border-radius:8px;
+
+}
+
+
+.submenu li{
+
+    padding:10px;
+
+}
+
+
+.dropdown:hover .submenu{
+
+    display:block;
+
+}
+
+
+.submenu li:hover{
+
+    background:#0750bd;
+    border-radius:5px;
+
+}
+
+
+
+/* ===================================
+   BANNER PRINCIPAL
+=================================== */
+
+
+.banner{
+
+    height:100vh;
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+
+    url("../imagenes/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+
+.contenido-banner{
+
+    color:white;
+
+}
+
+
+.contenido-banner h1{
+
+    font-size:50px;
+    margin-bottom:20px;
+
+}
+
+
+.contenido-banner p{
+
+    font-size:20px;
+    margin-bottom:30px;
+
+}
+
+
+.boton{
+
+    background:#00a8ff;
+    padding:15px 35px;
+    border-radius:30px;
+    transition:.3s;
+
+}
+
+
+.boton:hover{
+
+    background:white;
+    color:#0b3d91;
+
+}
+
+
+
+/* ===================================
+   SECCIONES GENERALES
+=================================== */
+
+
+section{
+
+    padding:90px 8%;
+
+}
+
+
+.titulo{
+
+    text-align:center;
+    font-size:35px;
+    color:#0b3d91;
+    margin-bottom:40px;
+
+}
+
+
+
+/* ===================================
+   QUIENES SOMOS
+=================================== */
+
+
+.nosotros{
+
+    text-align:center;
+
+}
+
+
+.nosotros p{
+
+    max-width:900px;
+    margin:20px auto;
+    line-height:1.8;
+
+}
+
+
+.nosotros img{
+
+    width:500px;
+    margin:30px auto;
+    border-radius:15px;
+
+}
+
+
+
+/* ===================================
+   PRODUCTOS
+=================================== */
+
+
+.contenedor-productos{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+
+.producto{
+
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px #ddd;
+    text-align:center;
+    transition:.3s;
+
+}
+
+
+.producto:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.producto img{
+
+    height:220px;
+    width:100%;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+
+.producto h3{
+
+    color:#0b3d91;
+    margin:15px 0;
+
+}
+
+
+.btnInfo{
+
+    background:#0b3d91;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:20px;
+    cursor:pointer;
+
+}
+
+
+.btnInfo:hover{
+
+    background:#00a8ff;
+
+}
+
+
+
+/* ===================================
+   PROMOCIONES
+=================================== */
+
+
+#promociones{
+
+    background:#eaf7ff;
+    text-align:center;
+
+}
+
+
+.promos{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+}
+
+
+.promo{
+
+    background:white;
+    padding:30px;
+    width:300px;
+    border-radius:15px;
+    box-shadow:0 5px 15px #ccc;
+
+}
+
+
+.promo h3{
+
+    color:#0b3d91;
+
+}
+
+
+
+/* ===================================
+   GALERÍA
+=================================== */
+
+
+.contenedor-galeria{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+
+}
+
+
+.imagen img{
+
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
+
+}
+
+
+.imagen img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* ===================================
+   CONTACTO
+=================================== */
+
+
+.contacto{
+
+    background:#0b3d91;
+
+}
+
+
+.contacto h2{
+
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+
+}
+
+
+form{
+
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+
+form input,
+form textarea{
+
+    padding:15px;
+    border:none;
+    border-radius:10px;
+
+}
+
+
+form button{
+
+    padding:15px;
+    background:#00a8ff;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+
+}
+
+
+/* ===================================
+   FOOTER
+=================================== */
+
+
+footer{
+
+    background:#061f4a;
+    color:white;
+    padding:40px 8%;
+
+}
+
+
+.footer-contenedor{
+
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+}
+
+
+.footer-menu ul{
+
+    list-style:none;
+
+}
+
+
+.footer-menu li{
+
+    margin:10px 0;
+
+}
+
+
+.footer-redes a{
+
+    font-size:30px;
+    margin:10px;
+
+}
+
+
+.copyright{
+
+    text-align:center;
+    margin-top:30px;
+
+}
+
+
+
+/* ===================================
+   WHATSAPP
+=================================== */
+
+
+.whatsapp{
+
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#25d366;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    z-index:999;
+
+}
+
+
+
+/* ===================================
+   BOTÓN SUBIR
+=================================== */
+
+
+#btnArriba{
+
+    position:fixed;
+    right:25px;
+    bottom:100px;
+    background:#0b3d91;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:50%;
+    cursor:pointer;
+
+}
+
+
+
+/* ===================================
+   RESPONSIVE CELULARES
+=================================== */
+
+
+@media(max-width:900px){
+
+
+.navbar{
+
+    flex-direction:column;
+
+}
+
+
+.menu{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+
+.contenedor-productos{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.promos{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+.contenedor-galeria{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.contenido-banner h1{
+
+    font-size:35px;
+
+}
+
+
+}
+
+/* ===================================
+   CATALOG / CARDS / DETALLE
+=================================== */
+
+.catalog-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.catalog-grid{padding:20px 0}
+
+.card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    overflow:hidden;
+}
+.card{border:1px solid #e6e6e6}
+
+.card .card-img{height:180px; overflow:hidden}
+.card .card-img img{width:100%; height:100%; object-fit:cover}
+.card .card-body{padding:15px}
+.card .card-body h3{color:#0b3d91; margin-bottom:8px}
+.card .card-body .small{color:#666; font-size:14px}
+.card .card-body .precio{margin-top:10px; font-weight:600}
+.card .card-actions{padding:10px; display:flex; justify-content:center}
+
+.items-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+.item-card .card-actions{display:flex; gap:10px; justify-content:center; padding-bottom:15px}
+
+.detalle-producto{max-width:900px; margin:20px auto; background:white; padding:20px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.detalle-producto img{max-width:400px; width:100%; display:block; margin:15px 0}
+
+/* cart button */
+.cart-btn{position:fixed; right:25px; bottom:180px; background:#0b3d91; color:white; border:none; padding:12px 16px; border-radius:30px; z-index:1001; cursor:pointer}
+.cart-btn #cart-count{background:#ff6b6b; padding:3px 8px; border-radius:12px; margin-left:8px}
+
+/* cart modal */
+.cart-modal{position:fixed; right:20px; bottom:80px; width:320px; max-height:70vh; overflow:auto; background:white; box-shadow:0 10px 30px rgba(0,0,0,0.2); border-radius:12px; z-index:1002}
+.cart-modal .cart-inner{padding:15px}
+.cart-modal .close-cart{position:absolute; right:8px; top:6px; background:transparent; border:none; font-size:22px}
+.cart-list{list-style:none; padding:10px}
+.cart-list li{margin-bottom:8px}
+.cart-total{font-weight:700; margin-top:10px}
+
+@media(max-width:900px){
+    .catalog-grid, .items-grid{grid-template-columns:1fr}
+    .cart-modal{right:10px; left:10px; bottom:80px}
+}
+
+/* header mini preview */
+.cart-preview{position:relative; display:inline-block; margin-left:15px}
+.cart-preview .cart-icon{background:transparent; color:white; border:none; font-size:18px; cursor:pointer}
+.cart-preview .cart-icon span{background:#ff6b6b; padding:2px 6px; border-radius:12px; margin-left:6px}
+.cart-dropdown{position:absolute; right:0; top:36px; width:260px; background:white; color:#333; border-radius:8px; box-shadow:0 8px 20px rgba(0,0,0,0.15); display:none; z-index:1002}
+.cart-dropdown .mini-list{padding:12px}
+.cart-dropdown .mini-list li{margin-bottom:8px}
+.cart-preview:hover .cart-dropdown{display:block}
+
+/* filters */
+.category-controls{display:flex; gap:12px; align-items:center; margin-bottom:20px; flex-wrap:wrap}
+.category-controls input[type="text"], .category-controls input[type="number"], .category-controls select{padding:8px; border-radius:8px; border:1px solid #ddd}
+
+.items-grid{margin-top:10px}

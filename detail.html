@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto - Óptica Camil</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logo">
+            <h2>Óptica Camil</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#productos">Productos</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+        <div class="cart-preview" id="header-cart">
+            <button class="cart-icon">🛒 <span id="header-cart-count">0</span></button>
+            <div class="cart-dropdown" id="header-cart-dropdown">
+                <!-- preview populated by script.js -->
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="detalle" id="product-detail">
+        <!-- El contenido será insertado por script.js según ?id= -->
+    </section>
+
+    <section class="catalogo" id="catalog">
+        <h2 class="titulo">Catálogo</h2>
+        <div class="catalog-grid" id="catalog-grid">
+            <!-- Las cards se generarán aquí dinámicamente -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-contenedor">
+        <div class="footer-logo">
+            <img src="imagenes/logo.png" alt="Logo">
+            <h3>Óptica Camil</h3>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2026 Óptica Camil | Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
