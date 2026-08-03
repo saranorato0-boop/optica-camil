@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#f4f9ff"/>
+  <rect x="90" y="90" width="620" height="320" rx="32" fill="#ffffff"/>
+  <ellipse cx="280" cy="250" rx="108" ry="112" fill="#f7fbff" stroke="#1d3b78" stroke-width="12"/>
+  <ellipse cx="520" cy="250" rx="108" ry="112" fill="#f7fbff" stroke="#1d3b78" stroke-width="12"/>
+  <path d="M176 250h88" stroke="#1d3b78" stroke-width="12" stroke-linecap="round"/>
+  <path d="M536 250h88" stroke="#1d3b78" stroke-width="12" stroke-linecap="round"/>
+  <path d="M388 250h132" stroke="#1d3b78" stroke-width="12" stroke-linecap="round"/>
+  <path d="M232 198c28-34 78-46 124-34" stroke="#44a6d6" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M568 198c-28-34-78-46-124-34" stroke="#44a6d6" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="248" cy="250" r="20" fill="#1d3b78"/>
+  <circle cx="488" cy="250" r="20" fill="#1d3b78"/>
+  <path d="M242 318c29 22 89 22 122 0" stroke="#7ec8f3" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#1d3b78">Tommy Hilfiger</text>
+</svg>

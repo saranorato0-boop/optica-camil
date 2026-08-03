@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#fff5fb"/>
+  <rect x="90" y="90" width="620" height="320" rx="32" fill="#ffffff"/>
+  <ellipse cx="280" cy="250" rx="108" ry="112" fill="#fcf4f8" stroke="#6b2e68" stroke-width="12"/>
+  <ellipse cx="520" cy="250" rx="108" ry="112" fill="#fcf4f8" stroke="#6b2e68" stroke-width="12"/>
+  <path d="M176 250h88" stroke="#6b2e68" stroke-width="12" stroke-linecap="round"/>
+  <path d="M536 250h88" stroke="#6b2e68" stroke-width="12" stroke-linecap="round"/>
+  <path d="M388 250h132" stroke="#6b2e68" stroke-width="12" stroke-linecap="round"/>
+  <path d="M234 198c26-34 74-48 124-40" stroke="#d98cc0" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M566 198c-26-34-74-48-124-40" stroke="#d98cc0" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="248" cy="250" r="20" fill="#8e3e79"/>
+  <circle cx="488" cy="250" r="20" fill="#8e3e79"/>
+  <path d="M242 318c28 22 86 22 118 0" stroke="#b96aa3" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="35" font-weight="700" fill="#8e3e79">Carolina Herrera</text>
+</svg>

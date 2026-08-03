@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#f8f4ea"/>
+  <rect x="90" y="90" width="620" height="320" rx="32" fill="#ffffff"/>
+  <ellipse cx="280" cy="250" rx="108" ry="112" fill="#f2efeb" stroke="#171717" stroke-width="12"/>
+  <ellipse cx="520" cy="250" rx="108" ry="112" fill="#f2efeb" stroke="#171717" stroke-width="12"/>
+  <path d="M176 250h88" stroke="#171717" stroke-width="12" stroke-linecap="round"/>
+  <path d="M536 250h88" stroke="#171717" stroke-width="12" stroke-linecap="round"/>
+  <path d="M388 250h132" stroke="#171717" stroke-width="12" stroke-linecap="round"/>
+  <path d="M224 192c28-40 76-60 124-48" stroke="#0f4d92" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M576 192c-28-40-76-60-124-48" stroke="#0f4d92" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="250" cy="250" r="22" fill="#0f4d92" opacity="0.95"/>
+  <circle cx="490" cy="250" r="22" fill="#0f4d92" opacity="0.95"/>
+  <path d="M242 316c30 24 88 24 120 0" stroke="#b58a3a" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#0f4d92">Ray-Ban</text>
+</svg>
