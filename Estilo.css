@@ -190,7 +190,7 @@ header {
 .btnInfo,
 form button {
     background: var(--azul-claro);
-    color: white;
+    color: rgb(252, 250, 250);
     border: none;
     padding: 12px 24px;
     border-radius: 999px;
