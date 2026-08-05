@@ -239,7 +239,7 @@ const products = {
         title: 'Anteojos de Sol',
         items: [
             { id: 's1', title: 'Sol Urban', img: 'imagenes/urbano.png', desc: 'Protección UV con estilo urbano.', price: 890, stock: 6 },
-            { id: 's2', title: 'Sol Sport', img: 'imagenes/sol.png', desc: 'Ligeros y resistentes para deporte.', price: 1100, stock: 4 }
+            { id: 's2', title: 'Sol Sport', img: 'imagenes/sol.png', desc: 'Ligeros y resistentes para deporte.', price: 1200, stock: 4 }
         ]
     },
     contactoLentes: {
